@@ -21,14 +21,14 @@ $ curl -X POST -sS https://inari.opencocon.org/oauth/token -d "client_id=xxxxxxx
 }
 ```
 
-※この方法では二段階認証が有効だと失敗する．一旦無効にして取得，その後有効にしてもトークンは利用できた．
+※この方法では二段階認証が有効だと失敗する．一旦二段階認証を無効にしてアクセストークンを取得，その後二段階認証有効にしてもアクセストークンは利用できた．
 
 ## follow list取得
 
->
-Getting who account is following:
+> Getting who account is following:
 GET /api/v1/accounts/:id/following
 
+crontabで一日一回書き出す例．
 自分のインスタンス分はインスタンス名がつかないのでawkで整形している．
 
 ```
@@ -37,6 +37,7 @@ GET /api/v1/accounts/:id/following
 
 ## ストリーミングAPI
 
+とりあえず閲覧は出来るが流れが遅いとバッファーに溜まって遅延する．
 xxxx部分はaccess_token
 
 ```
@@ -51,5 +52,9 @@ $ cpanm Mastodon
 
 ### Perlで文字投稿
 
-* toot-inari.pl
+* toot.pl
 
+
+### ストリーミングをgolでpopup表示
+
+* streaming.pl
