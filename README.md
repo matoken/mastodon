@@ -1,5 +1,16 @@
 # Mastodon memo
 
+## Timelinesを眺める
+
+* [Timelines](https://github.com/tootsuite/documentation/blob/master/Using-the-API/API.md#timelines)
+
+home, public, tag/:hashtag, local なんかがある．
+アクセストークンがなくてもアクセス可能なのでアカウントを持っていないインスタンスも覗ける．
+
+```
+$ curl -sS 'https://mstdn.jp/api/v1/timelines/public' | jq -r ".[] | .account.display_name,.account.acct,.content" | lynx -stdin
+```
+
 ## アクセストークンの取得
 
 * [cumentation/Testing-with-cURL.md at master · tootsuite/documentatio](https://github.com/tootsuite/documentation/blob/master/Using-the-API/Testing-with-cURL.md)
@@ -58,3 +69,4 @@ $ cpanm Mastodon
 ### ストリーミングをgolでpopup表示
 
 * streaming.pl
+  * [:don:](https://mstdn.maud.io/@matoken/104962 ":don:")
