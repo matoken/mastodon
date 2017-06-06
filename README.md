@@ -90,3 +90,11 @@ $ cpanm Mastodon
 * streaming.pl
   * [:don:](https://mstdn.maud.io/@matoken/104962 ":don:")
 
+## 参考URL
+
+* [gnusocial や mastodon の哲学 - 何とは言わない天然水飲みたさ](https://blog.cardina1.red/2017/04/13/federated-social-web/ "gnusocial や mastodon の哲学 - 何とは言わない天然水飲みたさ")
+* [特集：「マストドン」の可能性 - ITmedia NEWS](http://www.itmedia.co.jp/news/subtop/features/topics/mastodon.html "特集：「マストドン」の可能性 - ITmedia NEWS")
+* インスタンス一覧とか
+  * [Mastodon instances](https://instances.mastodon.xyz/list "Mastodon instances")
+  * [マストドンインスタンスリンク集＠日本サーバー](http://shimaguni.symphonic-net.com/mstdn/ "マストドンインスタンスリンク集＠日本サーバー")
+  * [日本のマストドンインスタンスの一覧](http://k52.org/mastodon/ "日本のマストドンインスタンスの一覧")
