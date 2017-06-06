@@ -25,10 +25,9 @@ URL encodeしたら受け付ける
 ```
 $ echo '#東海道らぐ' | nkf -MQ | tr = %
 %23%E6%9D%B1%E6%B5%B7%E9%81%93%E3%82%89%E3%81%90
-$ curl -sS 'https://inari.opencocon.org/api/v1/search?q=%23東海道らぐ'
+$ curl -sS 'https://inari.opencocon.org/api/v1/search?q=%23%E6%9D%B1%E6%B5%B7%E9%81%93%E3%82%89%E3%81%90
 {"accounts":[],"statuses":[],"hashtags":["東海道らぐ"]}
 ```
-
 
 ## アクセストークンの取得
 
